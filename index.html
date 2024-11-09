@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder pro</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+</head>
+<body>
+    <div class="main">
+
+        <!-- Resume display area -->
+        <div id="finalresume" style="display: block;">
+            <div class="name">
+                <h1 class="nameh1" contenteditable="true"><strong>Enter Your Name</strong></h1>
+            </div>
+            <div class="resume-container">
+                <!-- Left Sidebar Section -->
+                <div class="left-column">
+                    <div class="section">
+                        <h2>Contact</h2>
+                        <p><strong>Phone:</strong> <span contenteditable="true">+92-41233327</span></p>
+                        <p><strong>Email:</strong> <span contenteditable="true">khanwasif456@gmail.com</span></p>
+                        <p><strong>Address:</strong> <span contenteditable="true">Block 4, House #33, Karachi, Sindh, Pakistan</span></p>
+                        <p><strong>CNIC:</strong> <span contenteditable="true">41749-7641786-894719</span></p>
+                    </div>
+
+                    <div class="section" id="skills-section">
+                        <h2>Expertise</h2>
+                    
+                        <ul id="skills-list" contenteditable="true">
+                            <!-- Skills will be added here -->
+                        </ul>
+                        <button onclick="addSkill()">Add Skill</button>
+                    </div>
+
+                    <div class="section">
+                        <h2>Hobbies</h2>
+                        <p contenteditable="true">Reading Books, Coding, Traveling, Cooking</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Languages</h2>
+                        <p contenteditable="true">English, Urdu</p>
+                    </div>
+                </div>
+
+                <!-- Right Main Section -->
+                <div class="right-column">
+                    <div class="section">
+                        <h1>Profile</h1>
+                        <p contenteditable="true">Passionate web developer skilled in front-end technologies like HTML, CSS, JavaScript, and TypeScript. Experienced in building responsive and dynamic websites, with a focus on user experience and clean, maintainable code.</p>
+                    </div>
+
+                    <div class="section" id="education-section">
+                        <h2>Education</h2>
+                    
+                        <!-- Container for all education entries -->
+                        <div id="education-list">
+                            <!-- Initial or dynamically added education entries will appear here -->
+                        </div>
+                    
+                        <!-- Button to add a new education entry -->
+                        <button onclick="addEducation()">Add Education</button>
+                    </div>
+                    
+
+                    <div class="section">
+                        <h2>Experience</h2>
+                        <p contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nostrum? Mollitia, repudiandae porro. Pariatur natus earum voluptas ducimus animi odio sunt distinctio dolore repellat?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons for actions -->
+        <div class="button-container">
+            <button class="print" onclick="printResume()">Print & Pdf Resume</button>
+            <button class="edit" onclick="enableEditing()">Edit Resume</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

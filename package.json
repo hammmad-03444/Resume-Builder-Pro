@@ -1,0 +1,15 @@
+{
+  "name": "resume-builder-pro",
+  "version": "1.0.0",
+  "description": "This is a dynamic resume builder which creates your resume and you can save it print it and edit it according to your needs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Muhammad Hammad Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0"
+  }
+}
